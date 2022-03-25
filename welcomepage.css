@@ -1,0 +1,35 @@
+@charset "ISO-8859-1";
+body{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #010101;
+}
+.text span{
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: oswald;
+    font-weight: 900;
+    font-size: 48px;
+    animation: bounce 1.5s ease-in-out infinite;
+    animation-delay: var(--delay);
+
+}
+.text span:not(:last-child){
+    margin-right: -2px;
+
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
